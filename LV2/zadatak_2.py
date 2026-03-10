@@ -7,7 +7,10 @@ print(f"Mjerenja su izvršena na {data.shape[0]} osoba")
 gender = data[:,0]
 height = data[:,1]
 weight = data[:,2]
-
+plt.scatter(height,weight,marker='.')
+plt.xlabel("height")
+plt.ylabel("weight")
+plt.show()
 
 plt.scatter(height[::50],weight[::50],marker='.')
 plt.xlabel("height")
